@@ -7,13 +7,22 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <DatePicker
-        android:id="@+id/dp"
+    <TextView
+        android:id="@+id/today"
         android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:calendarViewShown="false"
-        android:gravity="center"></DatePicker>
+        android:gravity="center"
+        android:text="2022년 6월 7일"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/calendarView"/>
+    <CalendarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/calendarView"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
