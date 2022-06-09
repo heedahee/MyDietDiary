@@ -20,7 +20,7 @@ import java.util.ArrayList;
 
 public class fourActivity extends AppCompatActivity {
 
-    Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
+    Button btn1, btn2, btn3, btn4, btn5, btn6;
     ListView listViewMP3;
 
     String mp3Path = Environment.getExternalStorageDirectory().getPath() + "/";
