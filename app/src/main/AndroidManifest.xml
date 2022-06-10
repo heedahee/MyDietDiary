@@ -20,7 +20,10 @@
         </activity>
         <activity android:name=".secondActivity" android:label="second액티비티"/>
         <activity android:name=".thirdActivity" android:label="third액티비티"/>
-        <activity android:name=".fourActivity" android:label="four액티비티"/>
+        <activity android:name=".four_mainActivity" android:label="four_main액티비티"/>
+        <activity android:name=".four_kActivity" android:label="four_k액티비티"/>
+        <activity android:name=".four_pActivity" android:label="four_p액티비티"/>
+        <activity android:name=".four_hActivity" android:label="four_h액티비티"/>
     </application>
 
 </manifest>
