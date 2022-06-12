@@ -16,7 +16,7 @@ import java.io.IOException;
 
 public class four_kActivity extends AppCompatActivity {
 
-    Button btn1, btn2, btn3;
+    Button btn1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,10 +26,8 @@ public class four_kActivity extends AppCompatActivity {
 
 
         btn1 = findViewById(R.id.btn1);
-        btn2 = findViewById(R.id.btn2);
-        btn3 = findViewById(R.id.btn3);
 
-        btn3.setOnClickListener(new View.OnClickListener() {
+        btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
