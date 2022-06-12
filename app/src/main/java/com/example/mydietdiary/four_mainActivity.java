@@ -31,14 +31,14 @@ public class four_mainActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(four_mainActivity.this, four_kActivity.class);
+                Intent intent2 = new Intent(four_mainActivity.this, four_hActivity.class);
                 startActivity(intent2);
             }
         });
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent3 = new Intent(four_mainActivity.this, four_kActivity.class);
+                Intent intent3 = new Intent(four_mainActivity.this, four_pActivity.class);
                 startActivity(intent3);
             }
 

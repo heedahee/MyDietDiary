@@ -22,6 +22,8 @@ public class four_kActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.four_k);
+        setTitle("K - POP PLAYLIST");
+
 
         btn1 = findViewById(R.id.btn1);
         btn2 = findViewById(R.id.btn2);
@@ -34,8 +36,8 @@ public class four_kActivity extends AppCompatActivity {
             }
         });
 
-        final String[]mid = {"LOVE DIVE - 아이브","INVU - 태연", "MY BAG - 아이들",
-                "VOYAGER - 기현", "TOMBOY - 아이들", "DM - 프로미스나인", "SMILEY - 예나"};
+        final String[]mid = {"LOVE DIVE - 아이브","INVU - 태연", "MY BAG - 아이들","팡파레 - 다비치", "POSE - 이달의 소녀",
+                "TOMBOY - 아이들",  "SMILEY - 예나","Bad - 인피니트","이루리 - 우주소녀"};
 
         ListView list = (ListView) findViewById(R.id.listview1);
 

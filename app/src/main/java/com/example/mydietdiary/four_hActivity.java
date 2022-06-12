@@ -21,7 +21,9 @@ public class four_hActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.four_k);
+        setContentView(R.layout.four_h);
+        setTitle("HIP - HOP PLAYLIST");
+
 
         btn1 = findViewById(R.id.btn1);
         btn2 = findViewById(R.id.btn2);
@@ -34,8 +36,8 @@ public class four_hActivity extends AppCompatActivity {
             }
         });
 
-        final String[] mid = {"LOVE me - 비오", "Ballerino - 리쌍", "먹색의 별 - 디핵",
-                "비누 - 비비", "인생네컷 - Gist", "꽃다운 나이 - 릴러말즈", "단추 - 릴러말즈"};
+        final String[] mid = {"LOVE me - 비오", "먹색의 별 - 디핵", "비누 - 비비", "인생네컷 - Gist", "꽃다운 나이 - 릴러말즈", "로켓 - 송민호",
+               "불협화음 - Mudd the student", "만남은 쉽고 이별은 어려워 - 베이식", "해변 - B.I"};
         ListView list = (ListView) findViewById(R.id.listview1);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mid);

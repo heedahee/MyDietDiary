@@ -22,7 +22,9 @@ public class four_pActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.four_k);
+        setContentView(R.layout.four_p);
+        setTitle("POP SONG PLAYLIST");
+
 
         btn1 = findViewById(R.id.btn1);
         btn2 = findViewById(R.id.btn2);
@@ -36,7 +38,8 @@ public class four_pActivity extends AppCompatActivity {
         });
 
         final String[]mid = {"Dance Monkey - Tones And I","Every second - Mina Okabe", "Shut up - Mia Rodriguez",
-                "Working - Tate McRae,Khalid", "Hold on - Justin Bieber", "Hey siri - salem ilese"};
+                "Working - Tate McRae,Khalid", "Hold on - Justin Bieber", "Hey siri - salem ilese",
+                 "Two Face - Jake Daniels", "Killer - Valerie Broussard", "Shutter Island - Jessie Rayez", "X2 - Anne-Marie"};
         ListView list = (ListView) findViewById(R.id.listview1);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mid);
