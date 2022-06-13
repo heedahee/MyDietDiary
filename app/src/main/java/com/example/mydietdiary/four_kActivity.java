@@ -34,7 +34,7 @@ public class four_kActivity extends AppCompatActivity {
     ArrayList<String> mp3List;
     String selectedMP3;
 
-    String mp3Path = Environment.getExternalStorageDirectory().getAbsolutePath()+"kFolder";
+    String mp3Path = Environment.getExternalStorageDirectory().getPath()+"/";
     MediaPlayer mPlayer;
     boolean PAUSED = false;
 
@@ -43,12 +43,11 @@ public class four_kActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.four_k);
         setTitle("K-POP PLAYLIST");
-        ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.WRITE_EXTERNAL_STORAGE}, MODE_PRIVATE);
+        ActivityCompat.requestPermissions(this, new String[] {android.Manifest.permission.WRITE_EXTERNAL_STORAGE}, MODE_PRIVATE);
 
         mp3List = new ArrayList<String>();
 
         File[] listFiles = new File(mp3Path).listFiles();
-
         String fileName, extName;
         for (File file : listFiles){
             fileName = file.getName();
@@ -165,6 +164,7 @@ public class four_kActivity extends AppCompatActivity {
             }
         });
 
+
         btnPause.setClickable(false);
 
         btnStop.setOnClickListener(new View.OnClickListener() {
@@ -181,6 +181,6 @@ public class four_kActivity extends AppCompatActivity {
         });
 
         btnStop.setClickable(false);
-
     }
+
 }
