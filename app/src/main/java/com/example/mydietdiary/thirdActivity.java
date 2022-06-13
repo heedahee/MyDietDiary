@@ -10,7 +10,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 public class thirdActivity extends AppCompatActivity {
     private EditText height, weight;
-    Button btn, btn1;
+    Button btnback, btn1;
     TextView resulttext;
 
     @Override
@@ -23,7 +23,7 @@ public class thirdActivity extends AppCompatActivity {
         weight = findViewById(R.id.weight);
         height = findViewById(R.id.height);
         resulttext = findViewById(R.id.result);
-        btn = findViewById(R.id.btn);
+        btnback = findViewById(R.id.btnback);
         btn1 = findViewById(R.id.btn1);
 
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -32,7 +32,7 @@ public class thirdActivity extends AppCompatActivity {
                 bmi();
             }
         });
-        btn.setOnClickListener(new View.OnClickListener() {
+        btnback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();

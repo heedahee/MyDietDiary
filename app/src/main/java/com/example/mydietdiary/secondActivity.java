@@ -19,7 +19,7 @@ import java.util.Calendar;
 public class secondActivity extends AppCompatActivity {
     DatePicker dp;
     EditText et;
-    Button btn, btn1;
+    Button btnback, btn1;
     String filename;
 
     @Override
@@ -29,7 +29,7 @@ public class secondActivity extends AppCompatActivity {
         setContentView(R.layout.second);
         dp = findViewById(R.id.dp);
         et = findViewById(R.id.et);
-        btn = findViewById(R.id.btn);
+        btnback = findViewById(R.id.btnback);
         btn1 = findViewById(R.id.btn1);
 
         Calendar sss = Calendar.getInstance();
@@ -43,7 +43,7 @@ public class secondActivity extends AppCompatActivity {
                 filename = Integer.toString(i) + "_" + Integer.toString(i1) + "_" + Integer.toString(i2) + ".txt";
                 String str = readDiary(filename);
                 et.setText(str);
-                btn.setEnabled(true);
+                btn1.setEnabled(true);
             }
         });
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -59,7 +59,7 @@ public class secondActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
             }  });
-        btn.setOnClickListener(new View.OnClickListener() {
+        btnback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
