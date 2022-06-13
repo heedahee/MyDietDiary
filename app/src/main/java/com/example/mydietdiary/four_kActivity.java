@@ -43,7 +43,7 @@ public class four_kActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.four_k);
         setTitle("K-POP PLAYLIST");
-        ActivityCompat.requestPermissions(this, new String[] {android.Manifest.permission.WRITE_EXTERNAL_STORAGE}, MODE_PRIVATE);
+        ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.WRITE_EXTERNAL_STORAGE}, MODE_PRIVATE);
 
         mp3List = new ArrayList<String>();
 
