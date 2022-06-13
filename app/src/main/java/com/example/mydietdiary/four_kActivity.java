@@ -34,7 +34,7 @@ public class four_kActivity extends AppCompatActivity {
     ArrayList<String> mp3List;
     String selectedMP3;
 
-    String mp3Path = Environment.getExternalStorageDirectory().getPath()+"/";
+    String mp3Path = Environment.getExternalStorageDirectory().getAbsolutePath()+"kFolder";
     MediaPlayer mPlayer;
     boolean PAUSED = false;
 
@@ -48,6 +48,7 @@ public class four_kActivity extends AppCompatActivity {
         mp3List = new ArrayList<String>();
 
         File[] listFiles = new File(mp3Path).listFiles();
+
         String fileName, extName;
         for (File file : listFiles){
             fileName = file.getName();
