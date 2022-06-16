@@ -1,6 +1,7 @@
 package com.example.mydietdiary;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,8 +32,8 @@ public class four_mainActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(four_mainActivity.this, four_hActivity.class);
-                startActivity(intent2);
+                Intent urlintent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/c/thankyoububu"));
+                startActivity(urlintent);
             }
         });
         btn3.setOnClickListener(new View.OnClickListener() {

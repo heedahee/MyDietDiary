@@ -17,7 +17,7 @@ import java.util.Date;
 public class MainActivity extends AppCompatActivity {
     CalendarView calendarView;
     TextView today;
-    Button btn1, btn2, btn3;
+    Button btn1, btn2, btn3,btn4;
     EditText et;
     String filename;
     @Override
@@ -66,6 +66,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent3);
             }
         });
-
     }
 }

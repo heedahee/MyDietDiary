@@ -27,7 +27,7 @@ import java.util.ArrayList;
 
 public class four_pActivity extends AppCompatActivity {
     ListView listViewMP3;
-    Button btnPlay, btnStop, btnPause,btnback;
+    Button btnPlay, btnStop, btnPause, btnback;
     TextView tvMP3, tvTime;
     ProgressBar pbMP3;
 
@@ -42,7 +42,7 @@ public class four_pActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.four_p);
-        setTitle("POP-SONG PLAYLIST");
+        setTitle("K-POP PLAYLIST");
         ActivityCompat.requestPermissions(this, new String[] {android.Manifest.permission.WRITE_EXTERNAL_STORAGE}, MODE_PRIVATE);
 
         mp3List = new ArrayList<String>();
@@ -81,7 +81,7 @@ public class four_pActivity extends AppCompatActivity {
         btnPlay = (Button) findViewById(R.id.btnPlay);
         btnStop = (Button) findViewById(R.id.btnStop);
         btnPause = (Button) findViewById(R.id.btnPause);
-        btnback = (Button) findViewById(R.id.btnback);
+        btnback = (Button)findViewById(R.id.btnback);
         tvMP3 = (TextView) findViewById(R.id.tvMP3);
         tvTime = (TextView) findViewById(R.id.tvTime);
         pbMP3 = (ProgressBar) findViewById(R.id.pbMP3);
@@ -181,7 +181,6 @@ public class four_pActivity extends AppCompatActivity {
         });
 
         btnStop.setClickable(false);
-
-
     }
+
 }

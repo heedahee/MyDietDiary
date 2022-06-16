@@ -37,7 +37,6 @@ public class four_kActivity extends AppCompatActivity {
     String mp3Path = Environment.getExternalStorageDirectory().getPath()+"/";
     MediaPlayer mPlayer;
     boolean PAUSED = false;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +55,7 @@ public class four_kActivity extends AppCompatActivity {
         }
 
         listViewMP3 = (ListView) findViewById(R.id.listViewMP3);
+
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_single_choice, mp3List);
         listViewMP3.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
         listViewMP3.setAdapter(adapter);
