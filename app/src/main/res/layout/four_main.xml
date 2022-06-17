@@ -31,13 +31,6 @@
         android:gravity="center"
         android:textSize="20dp"></Button>
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn3"
-        android:text="헬스장 찾기"
-        android:gravity="center"
-        android:textSize="20dp"></Button>
-    <Button
         android:id="@+id/btnback"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

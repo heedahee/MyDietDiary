@@ -36,14 +36,7 @@ public class four_mainActivity extends AppCompatActivity {
                 startActivity(urlintent);
             }
         });
-        btn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent3 = new Intent(four_mainActivity.this, four_pActivity.class);
-                startActivity(intent3);
-            }
 
-        });
         btnback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
