@@ -14,7 +14,7 @@ public class four_mainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTitle("PLAY LIST");
+        setTitle("HELTH");
         setContentView(R.layout.four_main);
 
         btn1 = findViewById(R.id.btn1);
